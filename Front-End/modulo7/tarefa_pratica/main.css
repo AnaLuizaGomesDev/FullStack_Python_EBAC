@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    margin:80px auto;
+    max-width: 640px;
+    width: 100%;
+    text-align: center;
+}
+
+form{
+    margin-top: 40px;
+}
+
+input, button{
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    width:100%;
+    resize:none;
+}
+
+button {
+    background-color: #2f2f2f;
+    border-color: black;
+    text-transform: uppercase;
+    color:grey;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(97, 96, 96);
+}
+
+.mensagem-sucesso{
+    padding:16px;
+    background-color: #27ae60;
+    color: #fff;
+    display: none;
+}
+
+.mensagem-erro{
+    font-size: 12px;
+    padding:8px;
+    margin-bottom: 8px;
+    background-color: red;
+    color:#fff;
+    display:none;
+}
+
+input.erro{
+    color: red;
+    border-color: red;
+    outline-color: red;
+}
