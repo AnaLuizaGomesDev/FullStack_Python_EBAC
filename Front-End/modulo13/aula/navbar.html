@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar + Abas</title>
+    <title>Navbar + Abas + Toasts</title>
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <style>
         .navbar-nav .nav-link.active {
@@ -54,6 +54,7 @@
                         </li>
                     </ul>
                 </nav>
+                <button id="btn-checar-emails" type="button" class="btn btn-warning">Checar caixa de mensagens</button>
             </div>
         </div>
     </header>
@@ -65,9 +66,12 @@
             <h2>Produtos</h2>
             <div class="container">
                 <nav class="nav nav-tabs">
-                    <button data-bs-toggle="tab" data-bs-target="#aba1"class="nav-link active" type="button">Eletrônicos</button>
-                    <button data-bs-toggle="tab" data-bs-target="#aba2"class="nav-link" type="button">Moda Feminina</button>
-                    <button data-bs-toggle="tab" data-bs-target="#aba3"class="nav-link" type="button">Moda Masculina</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active"
+                        type="button">Eletrônicos</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Moda
+                        Feminina</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Moda
+                        Masculina</button>
                 </nav>
                 <div class="tab-content">
                     <div class="tab-pane active" id="aba1">
@@ -89,8 +93,34 @@
             <h2>Contato</h2>
         </section>
     </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div data-bs-autohide="false" class="toast" id="mensagens-alerta">
+            <header class="toast-header">
+                <strong>Importante</strong>
+            </header>
+            <div class="toast-body">
+                Você possui 10 mensagens não lidas
+                <div class="mt-2 pt-2 border-top">
+                    <button class="btn btn-danger" data-bs-dismiss="toast">
+                        Descartar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+        const ativadorToast = document.getElementById('btn-checar-emails')
+        const mensagem = document.getElementById('mensagens-alerta')
+
+        if (ativadorToast) {
+            ativadorToast.addEventListener('click', function () {
+                const toast = new bootstrap.Toast(mensagem)
+                toast.show()
+            })
+        }
+    </script>
 </body>
 
 </html>
