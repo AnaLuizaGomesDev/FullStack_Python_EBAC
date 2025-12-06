@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Bootstrap - Genshin Impact</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <img src="./imagens/logo.png" alt="logo-genshin" id="logo-genshin" class="p-3" />
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav id="menu" class="collapse navbar-collapse justify-content-end">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-tab="#about" class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-tab="#characters" class="nav-link" href="#" class="nav-link">Characters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-tab="#news" class="nav-link" href="#" class="nav-link">News</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container py-5" id="home">
+            <div id="carousel-regioes" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100" src="./imagens/mondstadt-regiao01.jpg"
+                            alt="regiao de mondstadt em teyvat" />
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="./imagens/liyue-regiao02.jpg" alt="regiao de liyue em teyvat" />
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="./imagens/inazuma-regiao03.jpg"
+                            alt="regiao de inazuma em teyvat" />
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="./imagens/sumeru-regiao04.jpg"
+                            alt="regiao de sumeru em teyvat" />
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="./imagens/fontaine-regiao05.jpg"
+                            alt="regiao de fontaine em teyvat" />
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="./imagens/natlan-regiao06.png"
+                            alt="regiao de natlan em teyvat" />
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="./imagens/snezhnaya-regiao07.png"
+                            alt="regiao de snezhnaya em teyvat" />
+                    </div>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-regioes">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-regioes">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-slide-to="0" data-bs-target="#carousel-regioes"></button>
+                    <button type="button" class="active" data-bs-slide-to="1" data-bs-target="#carousel-regioes"></button>
+                    <button type="button" class="active" data-bs-slide-to="2" data-bs-target="#carousel-regioes"></button>
+                    <button type="button" class="active" data-bs-slide-to="3" data-bs-target="#carousel-regioes"></button>
+                    <button type="button" class="active" data-bs-slide-to="4" data-bs-target="#carousel-regioes"></button>
+                    <button type="button" class="active" data-bs-slide-to="5" data-bs-target="#carousel-regioes"></button>
+                    <button type="button" class="active" data-bs-slide-to="6" data-bs-target="#carousel-regioes"></button>
+                </div>
+            </div>
+        </div>
+        <section id="tabs">
+            <div class="container">
+                <nav class="nav nav-tabs">
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#about" class="nav-link active">About</button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#characters" class="nav-link">Characters</button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#news" class="nav-link">News</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="about">
+                        Conteudo about
+                    </div>
+                    <div class="tab-pane fade" id="characters">
+                        Conteudo characters
+                    </div>
+                    <div class="tab-pane fade" id="news">
+                        Conteudo news
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container py-3">
+            todos os direitos reservados
+        </div>
+    </footer>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
