@@ -26,10 +26,10 @@
                             <a data-tab="#about" class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a data-tab="#characters" class="nav-link" href="#" >Characters</a>
+                            <a data-tab="#characters" class="nav-link" href="#">Characters</a>
                         </li>
                         <li class="nav-item">
-                            <a data-tab="#news" class="nav-link" href="#" >News</a>
+                            <a data-tab="#news" class="nav-link" href="#">News</a>
                         </li>
                     </ul>
                 </nav>
@@ -68,10 +68,12 @@
                             alt="regiao de snezhnaya em teyvat" />
                     </div>
                 </div>
-                <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-regioes">
+                <button type="button" class="carousel-control-prev" data-bs-slide="prev"
+                    data-bs-target="#carousel-regioes">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
-                <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-regioes">
+                <button type="button" class="carousel-control-next" data-bs-slide="next"
+                    data-bs-target="#carousel-regioes">
                     <span class="carousel-control-next-icon"></span>
                 </button>
                 <div class="carousel-indicators">
@@ -88,19 +90,172 @@
         <section id="tabs">
             <div class="container">
                 <nav class="nav nav-tabs">
-                    <button type="button" data-bs-toggle="tab" data-bs-target="#about" class="nav-link active">About</button>
-                    <button type="button" data-bs-toggle="tab" data-bs-target="#characters" class="nav-link">Characters</button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#about"
+                        class="nav-link active">About</button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#characters"
+                        class="nav-link">Characters</button>
                     <button type="button" data-bs-toggle="tab" data-bs-target="#news" class="nav-link">News</button>
                 </nav>
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="about">
-                        Conteudo about
+                        <div class="container">
+                            <div class="text-center ornamento-genshin">✧</div>
+                            <div id="card-about" class="card h-100 mx-auto p-4">
+                                <div class="card-body">
+                                    <p class="card-text text-start">
+                                        Genshin Impact is a massively popular, free-to-play, anime-style open-world
+                                        action
+                                        RPG by
+                                        miHoYo (HoYoverse), set in the fantasy world of Teyvat, where players explore,
+                                        battle with
+                                        elemental powers, and discover secrets while searching for a lost sibling.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ornamento-genshin">✧</div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="characters">
-                        Conteudo characters
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                    <div class="nav nav-pills flex-row flex-md-column justify-content-center gap-2" id="v-pills-tab">
+                                        <button type="button" class="nav-link btn-characters" id="pills-mond-tab" data-bs-toggle="pill" data-bs-target="#pills-mond"><span>✧</span> mondstadt</button>
+                                        <button type="button" class="nav-link btn-characters" id="pills-liyue-tab" data-bs-toggle="pill" data-bs-target="#pills-liyue"><span>✧</span> liyue</button>
+                                        <button type="button" class="nav-link btn-characters" id="pills-ina-tab" data-bs-toggle="pill" data-bs-target="#pills-ina"><span>✧</span> inazuma</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-mond">
+                                            <div class="text-center ornamento-genshin">✧</div>
+                                            <h5>Personagens</h5>
+                                            <div class="row">
+                                                <div class="col-6 col-md-4 col-lg-3 my-4">
+                                                    <div class="card card-personagens h-100">
+                                                        <img src="https://placehold.co/150"/>
+                                                        <div class="card-footer">
+                                                            personagem 1
+                                                            <a href="#" class="btn btn-outline-light btn-sm">Info</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-md-4 col-lg-3 my-4">
+                                                    <div class="card card-personagens h-100">
+                                                        <img src="https://placehold.co/150"/>
+                                                        <div class="card-footer">
+                                                            personagem 2
+                                                            <a href="#" class="btn btn-outline-light btn-sm">Info</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-md-4 col-lg-3 my-4">
+                                                    <div class="card card-personagens h-100">
+                                                        <img src="https://placehold.co/150"/>
+                                                        <div class="card-footer">
+                                                            personagem 3
+                                                            <a href="#" class="btn btn-outline-light btn-sm">Info</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-md-4 col-lg-3 my-4">
+                                                    <div class="card card-personagens h-100">
+                                                        <img src="https://placehold.co/150"/>
+                                                        <div class="card-footer">
+                                                            personagem 4
+                                                            <a href="#" class="btn btn-outline-light btn-sm">Info</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-center ornamento-genshin">✧</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="news">
-                        Conteudo news
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4 my-4">
+                                    <div class="card h-100 card-teaser">
+                                        <div class="card-header card-header-flex">
+                                            <h2 class="h5 mb-0">Story Teaser: What Still Lies Unwritten | Genshin Impact
+                                            </h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="ratio ratio-16x9">
+                                                <iframe src="https://www.youtube.com/embed/iJkJXR6pV5U"
+                                                    title="youtube video" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text">
+                                                When the magic known as storytelling breathes life into a character, it
+                                                too awakens a heart that knows how to wish.
+                                            </p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <time>Dec 9, 2025</time>
+                                                <a href="#" class="btn btn-outline-light">Info</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 my-4">
+                                    <div class="card h-100 card-teaser">
+                                        <div class="card-header card-header-flex">
+                                            <h2 class="h5 mb-0">Character Trailer - "Durin: A Story Born for This" |
+                                                Genshin
+                                                Impact</h2>
+                                        </div>
+                                        <div class="card-body h-100">
+                                            <div class="ratio ratio-16x9">
+                                                <iframe src="https://www.youtube.com/embed/MOkyO-PYAGY"
+                                                    title="youtube video" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text">
+                                                The author of the fairy tale pours their imagination into writing its
+                                                beginning, middle, and end.
+                                            </p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <time>Dec 2, 2025</time>
+                                                <a href="#" class="btn btn-outline-light">Info</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 my-4">
+                                    <div class="card h-100 card-teaser">
+                                        <div class="card-header card-header-flex">
+                                            <h2 class="h5 mb-0">Character Introduction and Skill Showcase:
+                                                "Windthreading
+                                                Shadow" Jahoda</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="ratio ratio-16x9">
+                                                <img
+                                                    src="https://fastcdn.hoyoverse.com/content-v2/hk4e/161144/240751f96e87d38b5b8afe3ba42ce98b_2023631696181234447.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text">
+                                                Hello, Traveler! Today, we have for you some great details on
+                                                "Windthreading
+                                                Shadow" Jahoda.
+                                            </p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <time>Nov 30, 2025</time>
+                                                <a href="#" class="btn btn-outline-light">Info</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
