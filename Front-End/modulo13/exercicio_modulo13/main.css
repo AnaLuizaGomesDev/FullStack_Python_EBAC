@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+h5 {
+    color: rgba(255,255,255,0.8);
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -22,13 +26,40 @@ header {
     width: 150px;
 }
 
-.nav-link {
-    color:white;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+.nav-tabs .nav-link:not(.active):hover {
+    color:#fff !important;
+    text-shadow: 0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff;
+    border: none;
 }
 
-.navbar-nav .nav-link:hover,
+.nav-tabs .nav-link.active:hover,
+.nav-pills .nav-link.active:hover,
+.nav-pills .nav-link.active {
+    background-color: #fff;
+    color:#fff;
+    text-shadow: 0 0 7px #000,
+    0 0 10px #000,
+    0 0 21px #000,
+    0 0 40px #000,
+    0 0 90px #000;
+}
+
+.navbar .nav-link,
+.nav-pills .nav-link {
+    color:rgba(255,255,255,0.8);
+}
+
+.navbar-nav .nav-link.active:hover,
+.navbar-nav .nav-link:hover {
+    border-top: 2px solid #fff;
+}
+
 .navbar-nav .nav-link.active {
-    color: grey;
+    border-bottom: 2px solid white;
 }
 
 .navbar-toggler-icon {
@@ -62,10 +93,7 @@ main {
 .nav-tabs .nav-link {
     background-color: rgba(255,255,255,0.5);
     color: black;
-}
-
-.tab-pane{
-    color: white;
+    border:none;
 }
 
 .card-header-flex {
@@ -76,12 +104,6 @@ main {
 
 .card-header h2 {
     line-height: 1.3;
-}
-
-footer {
-    background-color: rgba(0,0,0,0.6);
-    backdrop-filter: blur(4px);
-    color: white;
 }
 
 .ornamento-genshin {
@@ -107,22 +129,51 @@ footer {
 .ornamento-genshin::before { left: 0; }
 .ornamento-genshin::after { right: 0; }
 
-#card-about {
+#card-about,
+.card-teaser {
     background-color: rgba(0,0,0,0.6);
-    color: lightgrey;
+    color: rgba(255,255,255,0.8);
     backdrop-filter: blur(4px);
-}
-
-#card-about p{
     line-height: 2.0;
 }
 
-.card-img-overlay {
+.card-personagens {
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(4px);
+    color:rgba(255,255,255,0.8);
+    overflow: hidden;
+    border: none;
+}
+
+.card-personagens img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.card-personagens .card-footer {
     background-color: rgba(0,0,0,0.5);
 }
-.card-teaser,
-.card-personagens {
-    background-color: rgba(0,0,0,0.6);
-    backdrop-filter: blur(4px);
+
+.nav-pills .nav-link:not(.active):hover {
+    background-color: rgba(255,255,255,0.5);
     color:#fff;
+    text-shadow: 0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff;
+}
+
+footer {
+    background-color: black;
+    color: lightgrey;
+}
+
+.nome-fixo {
+    min-height: 3.5rem; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    line-height: 1.2;
+    overflow: hidden;
 }
