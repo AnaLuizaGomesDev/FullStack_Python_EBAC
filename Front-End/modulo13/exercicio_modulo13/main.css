@@ -1,61 +1,87 @@
+/* VARIÁVEIS */
+:root {
+    /* TEXTO */
+    --branco-texto: rgba(255, 255, 255, 0.8);
+
+    /* OVERLAYS */
+    --overlay-claro-medio: rgba(255, 255, 255, 0.5);
+    --overlay-escuro: rgba(0, 0, 0, 0.6);
+    --overlay-medio: rgba(0, 0, 0, 0.5);
+    --overlay-leve: rgba(0, 0, 0, 0.2);
+
+    /* GLOW */
+    --glow-branco: 0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff;
+    --glow-preto: 0 0 7px #000,
+        0 0 10px #000,
+        0 0 21px #000,
+        0 0 40px #000,
+        0 0 90px #000;
+}
+
+/* RESET */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-h5 {
-    color: rgba(255,255,255,0.8);
-}
-
+/* BASE / GLOBAL */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.5)), url(./imagens/background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(./imagens/background.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-header {
-    background-color: rgba(0,0,0,0.6);
+main {
+    flex: 1;
 }
 
+/* HEADER */
+header {
+    background-color: var(--overlay-escuro);
+}
+
+/* HEADER-LOGO */
 #logo-genshin {
     width: 150px;
 }
 
+/* TABS - CONTEÚDO */
+.tab-pane h5 {
+    color: var(--branco-texto);
+}
+
+/* NAVS */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active,
 .nav-tabs .nav-link:not(.active):hover {
-    color:#fff !important;
-    text-shadow: 0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff;
+    color: white;
+    text-shadow: var(--glow-branco);
     border: none;
 }
 
 .nav-tabs .nav-link.active:hover,
 .nav-pills .nav-link.active:hover,
 .nav-pills .nav-link.active {
-    background-color: #fff;
-    color:#fff;
-    text-shadow: 0 0 7px #000,
-    0 0 10px #000,
-    0 0 21px #000,
-    0 0 40px #000,
-    0 0 90px #000;
+    background-color: white;
+    color: white;
+    text-shadow: var(--glow-preto);
 }
 
 .navbar .nav-link,
 .nav-pills .nav-link {
-    color:rgba(255,255,255,0.8);
+    color: var(--branco-texto);
 }
 
 .navbar-nav .nav-link.active:hover,
 .navbar-nav .nav-link:hover {
-    border-top: 2px solid #fff;
+    border-top: 2px solid white;
 }
 
 .navbar-nav .nav-link.active {
@@ -66,10 +92,19 @@ header {
     filter: invert(1);
 }
 
-main {
-    flex: 1;
+.nav-tabs .nav-link {
+    background-color: var(--overlay-claro-medio);
+    color: black;
+    border: none;
 }
 
+.nav-pills .nav-link:not(.active):hover {
+    background-color: var(--overlay-claro-medio);
+    color: white;
+    text-shadow: var(--glow-branco);
+}
+
+/* CARROSSEL */
 .carousel {
     border-radius: 12px;
     overflow: hidden;
@@ -90,10 +125,60 @@ main {
     object-fit: cover;
 }
 
-.nav-tabs .nav-link {
-    background-color: rgba(255,255,255,0.5);
-    color: black;
-    border:none;
+/* CARDS */
+.cards-scroll {
+    max-height: none;
+    overflow: visible;
+}
+
+.cards-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cards-scroll::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+}
+
+.cards-scroll::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.3);
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.cards-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.6);
+}
+
+.cards-scroll::-webkit-scrollbar-thumb {
+    box-shadow: 0 0 4px rgba(255,255,255,0.5);
+}
+
+#card-about,
+.card-teaser {
+    background-color: var(--overlay-escuro);
+    color: var(--branco-texto);
+    backdrop-filter: blur(4px);
+    line-height: 2.0;
+}
+
+.card-personagens {
+    background-color: var(--overlay-leve);
+    backdrop-filter: blur(4px);
+    color: var(--branco-texto);
+    overflow: hidden;
+    border: none;
+}
+
+.card-personagens img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.card-personagens .card-footer {
+    background-color: var(--overlay-medio);
 }
 
 .card-header-flex {
@@ -106,12 +191,23 @@ main {
     line-height: 1.3;
 }
 
+/* PADRONIZAR NOMES NOS CARDS */
+.nome-fixo {
+    min-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+    overflow: hidden;
+}
+
+/* ORNAMENTO */
 .ornamento-genshin {
     text-align: center;
     margin: 28px 0;
     position: relative;
     font-size: 22px;
-    color: #fff; 
+    color: white;
     opacity: 0.9;
     letter-spacing: 2px;
 }
@@ -126,54 +222,52 @@ main {
     top: 50%;
 }
 
-.ornamento-genshin::before { left: 0; }
-.ornamento-genshin::after { right: 0; }
-
-#card-about,
-.card-teaser {
-    background-color: rgba(0,0,0,0.6);
-    color: rgba(255,255,255,0.8);
-    backdrop-filter: blur(4px);
-    line-height: 2.0;
+.ornamento-genshin::before {
+    left: 0;
 }
 
-.card-personagens {
-    background-color: rgba(0,0,0,0.2);
-    backdrop-filter: blur(4px);
-    color:rgba(255,255,255,0.8);
-    overflow: hidden;
-    border: none;
-}
-
-.card-personagens img{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    object-position: top center;
-}
-
-.card-personagens .card-footer {
-    background-color: rgba(0,0,0,0.5);
-}
-
-.nav-pills .nav-link:not(.active):hover {
-    background-color: rgba(255,255,255,0.5);
-    color:#fff;
-    text-shadow: 0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff;
+.ornamento-genshin::after {
+    right: 0;
 }
 
 footer {
     background-color: black;
-    color: lightgrey;
+    color: var(--branco-texto);
 }
 
-.nome-fixo {
-    min-height: 3.5rem; 
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    line-height: 1.2;
-    overflow: hidden;
+/* DESKTOP */
+@media (min-width: 992px) {
+
+    /* TIPOGRAFIA */
+    .nav-link {
+        font-size: 1.15rem;
+    }
+
+    .tab-pane h5 {
+        font-size: 1.5rem;
+    }
+
+    .btn,
+    p {
+        font-size: 1.05rem;
+    }
+
+    /* LOGO */
+    #logo-genshin {
+        width: 220px;
+        max-width: none;
+    }
+
+    /* CARROSSEL */
+    .carousel-item {
+        height: 70vh;
+    }
+
+    /* CARDS CHARACTERS */
+    .cards-scroll {
+        max-height: 45vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 0.5rem;
+    }
 }
