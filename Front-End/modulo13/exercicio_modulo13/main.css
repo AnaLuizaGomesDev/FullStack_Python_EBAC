@@ -4,20 +4,26 @@
     --branco-texto: rgba(255, 255, 255, 0.8);
 
     /* OVERLAYS */
+    --overlay-claro: rgba(255, 255, 255, 0.6);
     --overlay-claro-medio: rgba(255, 255, 255, 0.5);
+    --overlay-claro-leve: rgba(255, 255, 255, 0.2);
     --overlay-escuro: rgba(0, 0, 0, 0.6);
     --overlay-medio: rgba(0, 0, 0, 0.5);
     --overlay-leve: rgba(0, 0, 0, 0.2);
 
-    /* GLOW */
-    --glow-branco: 0 0 7px #fff,
+    /*BOX-SHADOW GLOW */
+    --box-glow-branco: 0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff;
-    --glow-preto: 0 0 7px #000,
+    --box-glow-preto: 0 0 7px #000,
         0 0 10px #000,
         0 0 21px #000,
         0 0 40px #000,
         0 0 90px #000;
+
+    /* FILTER GLOW */
+    --filter-glow-branco-1: 0 0 1px rgba(255, 255, 255);
+    --filter-glow-branco-2: 0 0 6px rgba(255, 255, 255);
 }
 
 /* RESET */
@@ -62,7 +68,7 @@ header {
 .navbar-nav .nav-link.active,
 .nav-tabs .nav-link:not(.active):hover {
     color: white;
-    text-shadow: var(--glow-branco);
+    text-shadow: var(--box-glow-branco);
     border: none;
 }
 
@@ -101,7 +107,7 @@ header {
 .nav-pills .nav-link:not(.active):hover {
     background-color: var(--overlay-claro-medio);
     color: white;
-    text-shadow: var(--glow-branco);
+    text-shadow: var(--box-glow-branco);
 }
 
 /* CARROSSEL */
@@ -127,8 +133,29 @@ header {
 
 /* CARDS */
 .cards-scroll {
-    max-height: none;
-    overflow: visible;
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1rem;
+}
+
+.cards-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cards-scroll::-webkit-scrollbar-track {
+    background: var(--overlay-claro-leve);
+    border-radius: 10px;
+}
+
+.cards-scroll::-webkit-scrollbar-thumb {
+    background: var(--overlay-claro-medio);
+    border-radius: 10px;
+}
+
+.cards-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--branco-texto);
+    cursor: pointer;
 }
 
 #card-about,
@@ -207,9 +234,23 @@ header {
     right: 0;
 }
 
+/* FOOTER */
 footer {
+    padding: 4px;
     background-color: black;
     color: var(--branco-texto);
+}
+
+#link-github a{
+    display: inline-block;
+    color: var(--branco-texto);
+    filter: drop-shadow(var(--filter-glow-branco-1)) drop-shadow(var(--filter-glow-branco-2));
+    text-decoration: none;
+}
+
+#github-logo {
+    width: 35px;
+    filter: invert(100%) drop-shadow(var(--filter-glow-branco-1)) drop-shadow(var(--filter-glow-branco-2));
 }
 
 /* DESKTOP */
@@ -240,11 +281,28 @@ footer {
         height: 70vh;
     }
 
-    /* CARDS CHARACTERS */
-    .cards-scroll {
-        max-height: 45vh;
-        overflow-y: auto;
-        overflow-x: hidden;
-        padding-right: 0.5rem;
+    /* FOOTER */
+    footer {
+        padding: 8px;
+    }
+
+    #link-github a{
+        filter: none;
+    }
+
+    #link-github a:hover {
+        color: var(--branco-texto);
+        transform: translateY(-2px);
+        text-shadow: var(--box-glow-branco);
+    }
+
+    #github-logo {
+        filter: invert(100%);
+    }
+
+    #github-logo:hover {
+        cursor: pointer;
+        transform: translateY(-2px);
+        filter:invert(100%) drop-shadow(var(--filter-glow-branco-1)) drop-shadow(var(--filter-glow-branco-2));
     }
 }
