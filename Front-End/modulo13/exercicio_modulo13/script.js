@@ -45,6 +45,14 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(`Aba mostrada: ${targetId}`); 
 
             updateMenuActive(targetId);
+
+            const targetPane = document.querySelector(targetId);
+            if(targetPane){
+                targetPane.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         });
     });
 

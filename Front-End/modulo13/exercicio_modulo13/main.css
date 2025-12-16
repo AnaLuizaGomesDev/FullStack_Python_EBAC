@@ -131,29 +131,6 @@ header {
     overflow: visible;
 }
 
-.cards-scroll::-webkit-scrollbar {
-    width: 8px;
-}
-
-.cards-scroll::-webkit-scrollbar-track {
-    background: rgba(255,255,255,0.1);
-    border-radius: 4px;
-}
-
-.cards-scroll::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.3);
-    border-radius: 4px;
-    transition: background 0.3s;
-}
-
-.cards-scroll::-webkit-scrollbar-thumb:hover {
-    background: rgba(255,255,255,0.6);
-}
-
-.cards-scroll::-webkit-scrollbar-thumb {
-    box-shadow: 0 0 4px rgba(255,255,255,0.5);
-}
-
 #card-about,
 .card-teaser {
     background-color: var(--overlay-escuro);
