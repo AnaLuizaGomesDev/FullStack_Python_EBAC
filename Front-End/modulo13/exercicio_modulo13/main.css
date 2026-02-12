@@ -110,6 +110,10 @@ header {
     text-shadow: var(--box-glow-branco);
 }
 
+#v-pills-tab .nav-link.active {
+    color:#000;
+}
+
 /* CARROSSEL */
 .carousel {
     border-radius: 12px;
