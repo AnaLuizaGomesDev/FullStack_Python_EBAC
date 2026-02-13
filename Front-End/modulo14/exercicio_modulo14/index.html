@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>just coffee</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <div class="section-title d-flex text-start align-items-center gap-3">
+                <i class="bi bi-cup-hot fs-2"></i>
+                <h1 class="section-title m-0">just coffee</h1>
+            </div>
+            <button class="navbar-toggler mb-2" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-a-cafeteria">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a cafeteria
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cardapio">
+                            <i class="bi bi-card-text me-1"></i>
+                            Cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mais-amados">
+                            <i class="bi bi-person-hearts me-1"></i>
+                            Mais amados
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fale-conosco">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-cafeteria">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="images/slides/slide1.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slides/slide2.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slides/slide3.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slides/slide4.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/slides/cafeteria.jpg" class="d-block w-100 rounded" alt="">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title fw-bold">Sobre <span class="text-colored">a cafeteria</span></h2>
+                            <p>
+                                Bem-vindo à <span class="text-colored">just coffee</span>. Somos um espaço dedicado aos
+                                amantes do bom café e da
+                                boa conversa. Combinamos grãos selecionados, confeitaria artesanal e um ambiente
+                                acolhedor para tornar o seu dia melhor. Uma xícara por vez, servimos felicidade. Venha
+                                nos visitar!
+                            </p>
+                            <h3 class="section-title fw-bold">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>
+                                Mais que café, uma experiência visual. Nosso ambiente é cheio de vida, luz natural e
+                                detalhes encantadores pensados para tornar seu dia mais bonito. É o cenário ideal para
+                                reunir os amigos, celebrar pequenas conquistas e, claro, tirar aquela foto perfeita. Um
+                                lugar vibrante onde boas memórias são criadas todos os dias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title fw-bold text-center mb-5">Nosso <span class="text-colored">cardápio</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" class="nav-link text-colored fw-bold text-start active"
+                                data-bs-toggle="tab" data-bs-target="#classicos">Clássicos</button>
+                            <button type="button" class="nav-link text-colored fw-bold text-start" data-bs-toggle="tab"
+                                data-bs-target="#gelados">Gelados</button>
+                            <button type="button" class="nav-link text-colored fw-bold text-start" data-bs-toggle="tab"
+                                data-bs-target="#comidas">Comidas</button>
+                            <button type="button" class="nav-link text-colored fw-bold text-start" data-bs-toggle="tab"
+                                data-bs-target="#confeitaria">Confeitaria</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="classicos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/classicos/americano.jpg"
+                                            alt="Americano">
+                                        <h5 class="text-colored fw-bold mt-2">Americano</h5>
+                                        <p>
+                                            A intensidade do espresso suavizada com água quente. Leve e saboroso.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/classicos/espresso.jpg"
+                                            alt="Espresso">
+                                        <h5 class="text-colored fw-bold mt-2">Espresso</h5>
+                                        <p>
+                                            A mais pura essência do grão. Intenso, encorpado e com crema aveludada.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/classicos/macchiato.jpg"
+                                            alt="Macchiato">
+                                        <h5 class="text-colored fw-bold mt-2">Macchiato</h5>
+                                        <p>
+                                            O encontro do espresso com um toque de suavidade. "Manchado" com crema de
+                                            leite.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/classicos/capuccino.jpg"
+                                            alt="Capuccino">
+                                        <h5 class="text-colored fw-bold mt-2">Capuccino</h5>
+                                        <p>
+                                            O clássico absoluto. Espresso, leite vaporizado e espuma densa em perfeita
+                                            harmonia.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/classicos/latte.jpg"
+                                            alt="Latte">
+                                        <h5 class="text-colored fw-bold mt-2">Latte</h5>
+                                        <p>
+                                            Leve e reconfortante. Muito leite vaporizado com uma dose sutil de café.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/classicos/mocha.jpg"
+                                            alt="Mocha">
+                                        <h5 class="text-colored fw-bold mt-2">Mocha</h5>
+                                        <p>
+                                            A união perfeita entre café e sobremesa. Espresso, leite e calda de
+                                            chocolate.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="gelados">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/gelados/iced-latte.jpg"
+                                            alt="Iced Latte">
+                                        <h5 class="text-colored fw-bold mt-2">Iced Latte</h5>
+                                        <p>
+                                            Refrescante e cremoso. Espresso duplo, muito leite e bastante gelo.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded"
+                                            src="images/cardapio/gelados/espresso-tonic.jpg" alt="Espresso Tonic">
+                                        <h5 class="text-colored fw-bold mt-2">Espresso Tonic</h5>
+                                        <p>
+                                            Sofisticado e vibrante. Espresso, água tônica e um toque cítrico de limão.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/gelados/cold-brew.jpg"
+                                            alt="Cold Brew">
+                                        <h5 class="text-colored fw-bold mt-2">Cold Brew</h5>
+                                        <p>
+                                            Extração lenta a frio (12h+). Sabor ultra suave, naturalmente doce e baixa
+                                            acidez.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/gelados/frappé.jpg"
+                                            alt="Frappé">
+                                        <h5 class="text-colored fw-bold mt-2">Frappé</h5>
+                                        <p>
+                                            A sobremesa gelada. Café batido com leite e gelo (estilo frozen), com muito
+                                            chantilly.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/gelados/afogatto.jpg"
+                                            alt="Afogatto">
+                                        <h5 class="text-colored fw-bold mt-2">Afogatto</h5>
+                                        <p>
+                                            O encontro de temperaturas. Uma bola de sorvete de baunilha "afogada" em
+                                            espresso quente.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="comidas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded"
+                                            src="images/cardapio/comidas/pao-de-queijo.jpg" alt="Pão de Queijo">
+                                        <h5 class="text-colored fw-bold mt-2">Pão de Queijo</h5>
+                                        <p>
+                                            A paixão nacional. Casquinha crocante, interior macio e muito queijo curado.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/comidas/croissant.jpg"
+                                            alt="Croissant">
+                                        <h5 class="text-colored fw-bold mt-2">Croissant</h5>
+                                        <p>
+                                            A autêntica receita francesa. Massa folhada, amanteigada e leve como o ar.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/comidas/toast.jpg"
+                                            alt="Toast">
+                                        <h5 class="text-colored fw-bold mt-2">Toast</h5>
+                                        <p>
+                                            Pão de fermentação natural tostado, coberto com avocado ou ingredientes
+                                            frescos.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/comidas/quiche.jpg"
+                                            alt="Quiche">
+                                        <h5 class="text-colored fw-bold mt-2">Quiche</h5>
+                                        <p>
+                                            Massa caseira que desmancha na boca, com recheio cremoso e gratinado.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/comidas/sanduiche.jpg"
+                                            alt="Sanduiche">
+                                        <h5 class="text-colored fw-bold mt-2">Sanduiche</h5>
+                                        <p>
+                                            Pão artesanal selado na chapa, frios selecionados, queijo derretido e salada
+                                            fresca.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="confeitaria">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/confeitaria/brownie.jpg"
+                                            alt="Brownie">
+                                        <h5 class="text-colored fw-bold mt-2">Brownie</h5>
+                                        <p>
+                                            Intenso e molhadinho. Chocolate meio amargo, interior denso (fudge) e aquela
+                                            casquinha craquelada.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/confeitaria/cookies.jpg"
+                                            alt="Cookies">
+                                        <h5 class="text-colored fw-bold mt-2">Cookies</h5>
+                                        <p>
+                                            O clássico americano. Bordas douradas e crocantes, centro macio e gotas
+                                            generosas de chocolate.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/confeitaria/banoffe.jpg"
+                                            alt="Banoffee">
+                                        <h5 class="text-colored fw-bold mt-2">Banoffee</h5>
+                                        <p>
+                                            O equilíbrio perfeito. Base crocante, muito doce de leite, bananas frescas e
+                                            chantilly leve.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded"
+                                            src="images/cardapio/confeitaria/cheesecake.jpg" alt="Cheesecake">
+                                        <h5 class="text-colored fw-bold mt-2">Cheesecake</h5>
+                                        <p>
+                                            Estilo New York. Creme de queijo denso e aveludado, com calda artesanal de
+                                            frutas vermelhas.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded"
+                                            src="images/cardapio/confeitaria/bolo-do-dia.jpg" alt="Bolo do Dia">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo do Dia</h5>
+                                        <p>
+                                            Sabor de infância. Receitas caseiras que variam diariamente: cenoura com
+                                            chocolate, fubá cremoso, laranja ou limão.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="mais-amados" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center fw-bold">Mais <span class="text-colored">amados</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded" src="images/amados/pao-de-queijo.jpg" alt="Pão de Queijo">
+                        <h3 class="stars-color">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </h3>
+                        <h3 class="section-title text-colored fs-4">Pão de Queijo</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded" src="images/amados/brownie.jpg" alt="Brownie">
+                        <h3 class="stars-color">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </h3>
+                        <h3 class="section-title text-colored fs-4">Brownie</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded" src="images/amados/capuccino.jpg" alt="Capuccino">
+                        <h3 class="stars-color">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </h3>
+                        <h3 class="section-title text-colored fs-4">Capuccino</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center fw-bold">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu Nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu E-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu Telefone
+                                    (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua Mensagem</label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes Sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo n° 145, Bairro Bootstrap - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
