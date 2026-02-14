@@ -1,0 +1,24 @@
+{
+  "name": "fullstack_python_ebac",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/AnaLuizaGomesDev/FullStack_Python_EBAC#readme",
+  "bugs": {
+    "url": "https://github.com/AnaLuizaGomesDev/FullStack_Python_EBAC/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaLuizaGomesDev/FullStack_Python_EBAC.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "sass:aula_mod15":"sass Front-End/modulo15/aula/source/main.scss Front-End/modulo15/aula/build/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "sass": "^1.97.3"
+  }
+}
