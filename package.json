@@ -16,6 +16,7 @@
   "main": "index.js",
   "scripts": {
     "sass:aula_mod15": "sass Front-End/modulo15/aula/source/main.scss Front-End/modulo15/aula/build/main.css --watch",
+    "sass:exc_mod15": "sass Front-End/modulo15/exercicio_sass/exercicio_com_sass/source/main.scss Front-End/modulo15/exercicio_sass/exercicio_com_sass/build/main.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
