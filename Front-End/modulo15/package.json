@@ -1,0 +1,38 @@
+{
+  "name": "fullstack_python_ebac",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/AnaLuizaGomesDev/FullStack_Python_EBAC#readme",
+  "bugs": {
+    "url": "https://github.com/AnaLuizaGomesDev/FullStack_Python_EBAC/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaLuizaGomesDev/FullStack_Python_EBAC.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "sass:aula_mod15": "sass Front-End/modulo15/aula/source/main.scss Front-End/modulo15/aula/build/main.css --watch",
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "detect-libc": "^2.1.2",
+    "immutable": "^5.1.4",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "node-addon-api": "^7.1.1",
+    "picomatch": "^4.0.3",
+    "readdirp": "^4.1.2",
+    "source-map-js": "^1.2.1"
+  },
+  "devDependencies": {
+    "gulp-obfuscate": "^0.2.9",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.97.3"
+  }
+}
