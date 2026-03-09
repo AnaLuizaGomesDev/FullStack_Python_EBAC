@@ -1,0 +1,1 @@
+function multiplicar(i,l){return i*l}module.exports=multiplicar;
