@@ -3,7 +3,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
     })
 
-    grunt.registerTask('olaGrunt', function(){
+    grunt.registerTask('helloGrunt', function(){
         const done = this.async();
         setTimeout(function() {
             console.log('Olá Grunt');
@@ -11,5 +11,5 @@ module.exports = function(grunt) {
         }, 3000);
     })
 
-    grunt.registerTask('default', ['olaGrunt']);
+    grunt.registerTask('default', ['helloGrunt']);
 }
