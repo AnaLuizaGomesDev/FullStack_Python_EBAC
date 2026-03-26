@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         setTimeout(function() {
             console.log('hello Grunt');
             done();
-        }, 3000);
+        }, 4000);
     })
 
     grunt.loadNpmTasks('grunt-contrib-less');
