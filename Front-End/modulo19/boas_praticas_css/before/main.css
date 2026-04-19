@@ -13,8 +13,6 @@
     grid-column-gap: 1%;
 }
 
-.produto {} /* bloco */
-
 .produto-imagem { /* elemento */
     width: 100%;
 }
