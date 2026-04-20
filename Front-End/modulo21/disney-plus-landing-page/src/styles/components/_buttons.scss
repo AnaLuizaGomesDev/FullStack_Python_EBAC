@@ -8,7 +8,25 @@
     color: $text-secondary;
     background-color: $bg-button-hero;
     text-transform: uppercase;
+    border: none;
     border-radius: 4px;
     margin-top: 2vw;
     margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.shows__tabs__button {
+    color: $text-secondary;
+    font-size: 20px;
+    border: none;
+    border-bottom: 5px solid transparent;
+    padding-bottom: 5px;
+    background: none;
+    text-transform: uppercase;
+    margin: 0 1vw;
+    cursor: pointer;
+
+    &--is-active {
+        border-bottom: 5px solid $text-secondary;
+    }
 }
