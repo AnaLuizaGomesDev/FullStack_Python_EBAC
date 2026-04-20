@@ -1,0 +1,32 @@
+@use '../config/_variables' as *;
+@use '../config/_mixins' as *;
+
+.text--big {
+    @include text($text-lg);
+}
+
+.text--medium {
+    @include text;
+}
+
+.text--small {
+    @include text($text-sm);
+}
+
+.title--big {
+    @include title($title-lg);
+}
+
+.title--medium {
+    @include title($title-md);
+}
+
+.title--small {
+    @include title;
+}
+
+.link-text {
+    @include text($text-lg);
+    color: $text-secondary;
+    text-decoration: underline;
+}
