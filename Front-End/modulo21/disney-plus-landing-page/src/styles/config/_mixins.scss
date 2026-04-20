@@ -1,0 +1,12 @@
+@use './_variables' as *;
+
+@mixin text($font-size: $text-md) {
+    font-size: $font-size;
+    line-height: $font-size + 10px;
+    color: $text-primary;
+}
+
+@mixin title($font-size: $title-sm) {
+    @include text($font-size);
+    color: $text-secondary;
+}

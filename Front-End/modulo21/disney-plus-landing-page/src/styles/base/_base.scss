@@ -1,0 +1,5 @@
+@use '../config/_variables' as *; // O * permite usar a variavel sem precisar de prefixo
+
+body {
+    background-color: $bg-color;
+}
