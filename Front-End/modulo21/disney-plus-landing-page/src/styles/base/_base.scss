@@ -1,5 +1,7 @@
 @use '../config/_variables' as *; // O * permite usar a variavel sem precisar de prefixo
+@use './_typography' as *;
 
 body {
     background-color: $bg-color;
+    font-family: Avenir, sans-serif;
 }
