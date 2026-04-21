@@ -1,8 +1,14 @@
+@use '../config/_variables' as *;
+
 .image-text-section {
     padding: 5.6vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+
+    @media (max-width: $tablet) {
+        display: block;
+    }
 
     img {
         max-width: 100%;
@@ -33,6 +39,12 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media (max-width: $tablet) {
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
         }
     }
 }

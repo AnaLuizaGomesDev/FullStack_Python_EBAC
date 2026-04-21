@@ -1,4 +1,4 @@
-export function initTabs() {
+function initTabs() {
     const buttons = document.querySelectorAll('[data-tab-button]');
 
     for (let i = 0; i < buttons.length; i++) {
@@ -28,5 +28,3 @@ export function initTabs() {
         }
     }
 }
-
-window.initTabs = initTabs;

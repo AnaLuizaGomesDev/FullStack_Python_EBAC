@@ -1,4 +1,4 @@
-export function toggleHeaderOnScroll() {
+function toggleHeaderOnScroll() {
     const heroSection = document.querySelector('.hero');
     const heroHeight = heroSection.clientHeight
 
@@ -22,5 +22,3 @@ function showHeader() {
     const header = document.querySelector('header');
     header.classList.remove('header--is-hidden');
 }
-
-window.toggleHeaderOnScroll = toggleHeaderOnScroll;

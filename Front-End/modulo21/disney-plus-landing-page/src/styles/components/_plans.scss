@@ -17,6 +17,15 @@
         justify-content: space-around;
         margin-top: 50px;
 
+        @media (max-width: $tablet) {
+            display: block;
+        }
+
+        @media (min-width: $tablet) and (max-width: $desktop) {
+            flex-direction: column;
+            align-items: center;
+        }
+
         &__item {
             text-align: center;
             padding: 60px 44px 44px;
