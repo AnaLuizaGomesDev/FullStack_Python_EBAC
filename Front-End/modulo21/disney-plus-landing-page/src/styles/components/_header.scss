@@ -13,7 +13,9 @@
         transition: background-color .5s ease;
 
         .header {
-            &__logo, &__links__item:first-child {
+
+            &__logo,
+            &__links__item:first-child {
                 opacity: 0;
                 visibility: hidden;
                 transition: opacity .5s ease;
