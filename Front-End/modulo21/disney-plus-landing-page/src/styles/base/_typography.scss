@@ -1,6 +1,21 @@
 @use '../config/_variables' as *;
 @use '../config/_mixins' as *;
 
+// FONTS
+@font-face {
+    font-family: Avenir;
+    src: url(../../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+// CLASSES
+
 .text--big {
     @include text($text-lg);
 }
