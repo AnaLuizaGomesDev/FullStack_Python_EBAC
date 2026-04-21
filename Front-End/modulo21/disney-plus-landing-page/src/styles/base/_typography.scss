@@ -18,26 +18,50 @@
 
 .text--big {
     @include text($text-lg);
+
+    @media (max-width: $tablet) {
+        @include text(15px);
+    }
 }
 
 .text--medium {
     @include text;
+
+    @media (max-width: $tablet) {
+        @include text(14px);
+    }
 }
 
 .text--small {
     @include text($text-sm);
+
+    @media (max-width: $tablet) {
+        @include text(11px);
+    }
 }
 
 .title--big {
     @include title($title-lg);
+
+    @media (max-width: $tablet) {
+        @include title(26px);
+    }
 }
 
 .title--medium {
     @include title($title-md);
+
+    @media (max-width: $tablet) {
+        @include title(24px);
+    }
 }
 
 .title--small {
     @include title;
+
+    @media (max-width: $tablet) {
+        @include title(22px);
+    }
 }
 
 .link-text {
