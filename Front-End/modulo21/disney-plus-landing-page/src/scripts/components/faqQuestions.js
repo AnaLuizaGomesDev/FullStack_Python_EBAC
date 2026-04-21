@@ -1,4 +1,4 @@
-export function initFAQ() {
+function initFAQ() {
     const questions = document.querySelectorAll('[data-faq-question]');
 
     for (let i = 0; i < questions.length; i++){
@@ -12,5 +12,3 @@ function toggleAnswer(element) {
 
     parentElement.classList.toggle(itemClass);
 }
-
-window.initFAQ = initFAQ;
