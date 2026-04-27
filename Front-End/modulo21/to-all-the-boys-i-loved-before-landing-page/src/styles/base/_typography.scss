@@ -1,0 +1,62 @@
+@use '../config/_variables' as *;
+@use '../config/_mixins' as *;
+
+// FONTS
+@font-face {
+    font-family: Caveat;
+    src: url(../../assets/caveat-v23-latin-regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Caveat-Bold;
+    src: url(../../assets/caveat-v23-latin-700.woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../../assets/comfortaa-v47-latin-regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../../assets/comfortaa-v47-latin-700.woff2);
+    font-weight: 700;
+}
+
+// CLASSES
+
+    // TEXTS
+    .text--small {
+        @include text($text-sm);
+    }
+
+    .text--medium {
+        @include text($text-md);
+    }
+
+    .text--big {
+        @include text($text-lg);
+    }
+
+    // TITLES
+    .title--small {
+        @include title($title-sm);
+        font-family: "Caveat", sans-serif;
+        font-weight: 700;
+    }
+
+    .title--medium {
+        @include title($title-md);
+        font-family: "Caveat", sans-serif;
+        font-weight: 700;
+    }
+
+    .title--big {
+        @include title($title-lg);
+        font-family: "Caveat", sans-serif;
+        font-weight: 700;
+    }
+

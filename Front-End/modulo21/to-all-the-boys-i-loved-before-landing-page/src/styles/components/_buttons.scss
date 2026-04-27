@@ -1,0 +1,36 @@
+@use '../config/_variables' as *;
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 14px;
+    margin: 0 auto;
+    height: 60px;
+
+    font-size: $text-lg;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    border: none;
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: $highlight-color;
+        transition: ease .5s;
+        transform: translateY(-4px);
+    }
+
+    a {
+        text-decoration: none;
+        color: $neutral-light;
+    }
+
+    &--primary {
+        background-color: $primary-color;
+    }
+}
