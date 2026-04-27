@@ -1,0 +1,23 @@
+@use '../config/_variables' as *;
+
+.heart-letter-divider {
+    padding: 5.6vw;
+    max-width: 640px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+
+    @media (min-width: $desktop) {
+        padding: 0 0 5.6vw 0;
+    }
+
+    &__icon {
+        filter: brightness(0) saturate(100%) invert(71%) sepia(11%) saturate(2082%) hue-rotate(307deg) brightness(86%) contrast(98%);
+        width: 100%;
+
+        @media (min-width: $desktop) {
+            width: 50vw;
+        }
+    }
+}

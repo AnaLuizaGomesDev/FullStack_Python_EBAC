@@ -1,0 +1,37 @@
+@use '../config/_variables' as *;
+
+.hero {
+    padding: 5.6vw;
+    background-image: linear-gradient(to bottom, transparent 60%,white 81%, white 90%), url('../images/hero_mobile.jpg');
+    min-height: 70vh;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: calc(160vw + 25px);
+
+    @media (min-width: $tablet) {
+        background-image: linear-gradient(to bottom, transparent 30%, white 81%, white 90%), url('../images/hero_banner.png');
+        background-size: contain;
+        padding-top: calc(70vw + 25px);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    @media (min-width: $desktop) {
+        background-size: 120vh;
+        background-position: right;
+        justify-content: flex-start;
+        padding-top: 10vw;
+    }
+
+    &__content {
+        max-width: 640px;
+        font-weight: bold;
+        
+        h3 {
+            margin-bottom: 20px;
+        }
+    }
+}
