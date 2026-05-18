@@ -1,8 +1,12 @@
 // CONFIG
+@use './config/variables';
 
 // BASE
 @use "./base/reset";
 @use "./base/base";
 
 // COMPONENTS
-@use "./components/hero";
+@use './components/hero';
+@use './components/infos-bar';
+@use './components/buttons';
+@use './components/event';
