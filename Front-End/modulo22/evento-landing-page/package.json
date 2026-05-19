@@ -4,7 +4,6 @@
   "description": "",
   "scripts": {
     "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
-    "build": "parcel build src/index.html --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,8 +11,12 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.0",
-    "parcel": "^2.8.0",
-    "sharp": "^0.33.5"
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.16.4",
+    "sharp": "^0.34.5"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "npm": "^11.14.1"
   }
 }
