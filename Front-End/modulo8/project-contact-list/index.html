@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+        <h1>Contatos</h1>
+    </header>
+    <form id="form-contatos">
+        <input type="text" id="nome-contato" required placeholder="Nome"/>
+        <input type="tel" id="telefone-contato" required placeholder="(DDD) 99999-9999" oninput="this.value = this.value.replace(/[^0-9]/g, '');" minlength="9" maxlength="15"/>
+        <button type="submit">+ Adicionar</button>
+    </form>
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tbody>
+    </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
