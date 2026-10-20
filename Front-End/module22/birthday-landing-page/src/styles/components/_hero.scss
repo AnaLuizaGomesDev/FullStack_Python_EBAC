@@ -1,0 +1,57 @@
+@use '../config/variables' as *;
+
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url('../images/hero-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $hero-overlay-color;
+        content: '';
+    }
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        line-height: 56px;
+        color: $primary-text-color;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    &__logo {
+        display: block;
+        margin: 0 auto;
+        height: 80px;
+        width: 80px;
+        fill: $hero-logo-color;
+        stroke: $hero-logo-stroke-color;
+        stroke-width: 5px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        padding: 40px 0;
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+
+        &__logo {
+            height: 60px;
+        }
+    }
+}

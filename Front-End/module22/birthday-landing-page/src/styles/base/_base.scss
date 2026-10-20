@@ -1,0 +1,15 @@
+@use '../config/variables' as *;
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-mobile) {
+        max-width: 80%;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        max-width: 90%;
+    }
+}
