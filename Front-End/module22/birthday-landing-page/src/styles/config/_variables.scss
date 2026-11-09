@@ -1,14 +1,81 @@
-//COLORS
+// PALETTE COLORS
+$forest-black: #140F0D; // main background
+$dark-wood: #29201C; // cards & sections
+$dark-terracota: #683324; // borders & decorations
+$pumpkin-orange: #d95127; // buttons & highlights
+$burnt-orange: #A83E16; // button hover
+$candle-light-gold: #F5A442; // accents & hover
+$ivory: #F5DEAE; // headings & primary text
+$warm-parchment: #CBB3A0; // secondary text
+
+// GLOW COLORS
+$card-glow: $candle-light-gold;
+
+
+// BODY COLORS
+$body-background-color: $forest-black;
+$primary-text-color: $ivory;
+$secondary-text-color: $warm-parchment;
+
+// HERO COLORS
+$hero-overlay-color: rgba(0, 0, 0, 0.8);
+    // SAVE THE DATE COLORS
+    $save-the-date-border-button-color: $pumpkin-orange;
+    $save-the-date-background-button-color: rgba($pumpkin-orange, 0.1);
+    $save-the-date-background-button-hover-color: rgba($burnt-orange, 0.4);
+    $save-the-date-text-button-color: $ivory;
     // TEXT COLORS
-    $primary-text-color: #F7F4EB;
-    $bege: #E6DEC9;
-    $hover: #F28C54;
+    $hero-title-color: $ivory;
+    
+// ATTRACTIONS COLORS
+$attractions-card-background-color: rgba($dark-wood, 0.8);
+$attractions-card-border-color: $dark-terracota;
 
-    // HERO COLORS
-    $hero-overlay-color: rgba(0, 0, 0, 0.5);
-    $hero-logo-color: #D97443;
-    $hero-logo-stroke-color: #301B14;
+// FOOTER COLORS
+$footer-background-color: $dark-wood;
 
+// FONTS
+$body-font: 'Outfit', sans-serif;
+$title-font: 'Cinzel Decorative', cursive;
+
+// FONT SIZES
+    // DESKTOP
+    $h1-desktop-font-size: 64px;
+    $h2-desktop-font-size: 40px;
+    $h3-desktop-font-size: 28px;
+    $h4-desktop-font-size: 22px;
+    $body-desktop-font-size: 18px;
+    $button-desktop-font-size: 16px;
+    // TABLET
+    $h1-tablet-font-size: 48px;
+    $h2-tablet-font-size: 34px;
+    $h3-tablet-font-size: 24px;
+    $h4-tablet-font-size: 20px;
+    $body-tablet-font-size: 16px;
+    $button-tablet-font-size: 16px;
+    // MOBILE
+    $h1-mobile-font-size: 36px;
+    $h2-mobile-font-size: 28px;
+    $h3-mobile-font-size: 22px;
+    $h4-mobile-font-size: 18px;
+    $body-mobile-font-size: 16px;
+    $button-mobile-font-size: 14px;
+
+// FONT WEIGHTS
+$h1-weight: 700;
+$h2-weight: 700;
+$h3-weight: 600;
+$h4-weight: 500;
+$body-weight: 400;
+$button-weight: 600;
+
+// LINE HEIGHTS
+$h1-lh: 110%;
+$h2-lh: 120%;
+$h3-lh: 125%;
+$h4-lh: 140%;
+$body-lh: 160%;
+$button-lh: 120%;
 
 // BREAKPOINTS
 $breakpoint-mobile: 640px;

@@ -1,0 +1,44 @@
+@use '../config/variables' as *;
+
+.footer {
+    padding: 48px;
+    background-color: $footer-background-color;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    &__github-icon {
+        width: 40px;
+        filter: brightness(0) saturate(100%) invert(83%) sepia(35%) saturate(319%) hue-rotate(347deg) brightness(104%) contrast(92%);
+
+        &:hover {
+            filter: brightness(0) saturate(100%) invert(82%) sepia(27%) saturate(227%) hue-rotate(344deg) brightness(85%) contrast(90%);
+            transform: translateY(-3px);
+        }
+    }
+
+    &__text {
+        font-size: $body-desktop-font-size;
+        color: $primary-text-color;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        &__container {
+            flex-direction: column;
+        }
+        &__text {
+            font-size: $body-mobile-font-size;
+        }
+    }
+
+    @media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+        &__text {
+            font-size: $body-tablet-font-size;
+        }
+    }
+}

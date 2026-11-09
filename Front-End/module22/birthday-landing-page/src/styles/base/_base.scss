@@ -1,9 +1,14 @@
 @use '../config/variables' as *;
 
+body {
+    background-color: $body-background-color;
+}
+
 .container {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
+    font-family: $body-font;
 
     @media (max-width: $breakpoint-mobile) {
         max-width: 80%;

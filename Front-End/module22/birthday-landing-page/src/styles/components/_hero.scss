@@ -1,15 +1,18 @@
 @use '../config/variables' as *;
+@use '../config/keyframes.scss' as *;
 
 .hero {
-    padding-top: 64px;
-    padding-bottom: 100px;
     background-image: url('../images/hero-banner.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 
-    .container {
+    &__container {
         position: relative;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        height: 100dvh;
     }
 
     &::before {
@@ -22,36 +25,165 @@
         content: '';
     }
 
-    &__text {
-        margin-top: 64px;
-        margin-bottom: 64px;
-        line-height: 56px;
-        color: $primary-text-color;
-        font-weight: 800;
-        text-align: center;
+    &__save-the-date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &__button {
+            background-color: $save-the-date-background-button-color;
+            color: $save-the-date-text-button-color;
+            font-family: $body-font;
+            font-size: $button-desktop-font-size;
+            font-weight: $button-weight;
+            line-height: $button-lh;
+            letter-spacing: 2px;
+            padding: 10px 20px;
+            align-self: flex-end;
+            border: solid 2px $save-the-date-border-button-color;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        
+            &:hover {
+                background-color: $save-the-date-background-button-hover-color;
+            }
+        }
     }
 
     &__logo {
         display: block;
         margin: 0 auto;
-        height: 80px;
-        width: 80px;
-        fill: $hero-logo-color;
-        stroke: $hero-logo-stroke-color;
-        stroke-width: 5px;
+        height: 300px;
+        width: auto;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        &__title {
+            font-family: $title-font;
+            font-size: $h1-desktop-font-size;
+            font-weight: $h1-weight;
+            line-height: $h1-lh;
+            color: $hero-title-color;
+            text-align: center;
+        }
+    
+        &__text {
+            font-size: $h3-desktop-font-size;
+            font-weight: $h3-weight;
+            line-height: $h3-lh;
+            color: $primary-text-color;
+            text-align: center;
+        }
+
+        &__countdown {
+            font-family: $title-font;
+            font-size: $h2-desktop-font-size;
+            font-weight: $h2-weight;
+            line-height: $h2-lh;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 40px;
+            color: $primary-text-color;
+        
+            &__item {
+                background-color: $save-the-date-background-button-color;
+                border: solid 2px $save-the-date-border-button-color;
+                border-radius: 25px;
+                transition: background-color 0.3s ease;
+                padding: 40px;
+
+                &:hover {
+                    background-color: $save-the-date-background-button-hover-color;
+                    box-shadow: 0 0 25px rgba($card-glow, .6);
+                    transform: translateY(-3px);
+                }   
+            }
+        }        
     }
 
     @media (max-width: $breakpoint-mobile) {
-        padding: 40px 0;
+        &__container {
+            height: auto;
+            justify-content: space-between;
+        }
 
-        &__text {
-            font-size: 22px;
-            line-height: 24px;
-            margin: 24px 0;
+        &__save-the-date {
+            padding-top: 20px;
+
+            &__button {
+                font-size: $button-mobile-font-size;
+            }
         }
 
         &__logo {
-            height: 60px;
+            height: 150px;
+        }
+
+        &__body {
+            gap: 35px;
+
+            &__title {
+                font-size: $h2-mobile-font-size;
+            }
+
+            &__text {
+                font-size: $h4-mobile-font-size;
+            }
+
+            &__countdown {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+                font-size: $h3-mobile-font-size;
+            }
+        }
+
+        &__body__countdown {           
+            &__item {
+                padding: 20px;
+                width: auto;
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+        &__save-the-date {
+            &__button {
+                font-size: $button-tablet-font-size;
+            }
+        }
+
+        &__logo {
+            height: 150px;
+        }
+
+        &__body {
+            &__title {
+                font-size: $h1-tablet-font-size;
+            }
+
+            &__text {
+                font-size: $h3-tablet-font-size;
+            }
+
+            &__countdown {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+                font-size: $h2-tablet-font-size;
+            }
+        }
+
+        &__body__countdown {           
+
+            &__item {
+                padding: 20px;
+            }
         }
     }
 }
+    
