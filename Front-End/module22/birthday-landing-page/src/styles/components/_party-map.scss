@@ -1,0 +1,106 @@
+@use '../config/variables' as *;
+
+.party-map {
+    text-align: center;
+    overflow-x: hidden;
+
+    &__title {
+        font-family: $title-font;
+        font-size: $h2-desktop-font-size;
+        font-weight: $h2-weight;
+        line-height: $h2-lh;
+        color: $primary-text-color
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        height: 100dvh;
+        justify-content: space-evenly;
+    }
+
+    &__body {
+        display: flex;
+        gap: 20px;
+
+        &__description {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            padding: 20px;
+            color: $secondary-text-color;
+
+            &__title {
+                font-size: $h3-desktop-font-size;
+                font-weight: $h3-weight;
+                line-height: $h3-lh;
+            }
+
+            &__text {
+                font-size: $body-desktop-font-size;
+                font-weight: $body-weight;
+                line-height: $body-lh;
+            }
+        }
+
+        &__image {
+            width: 500px;
+        }
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        &__container {
+            height: auto;
+        }
+
+        &__title {
+            font-size: $h2-mobile-font-size;
+        }
+
+        &__body {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+
+            &__description {
+                &__title {
+                    font-size: $h3-mobile-font-size;
+                }
+
+                &__text {
+                    font-size: body-mobile-font-size;
+                }
+            }
+
+            &__image {
+                width: 300px;
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+
+        &__title {
+            font-size: $h2-tablet-font-size;
+        }
+
+        &__body {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+
+            &__description {
+                &__title {
+                    font-size: $h3-tablet-font-size;
+                }
+
+                &__text {
+                    font-size: body-tablet-font-size;
+                }
+            }
+        }
+    }
+}

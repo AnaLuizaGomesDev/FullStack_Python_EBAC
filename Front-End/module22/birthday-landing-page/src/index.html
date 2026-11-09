@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Birthday Party</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="hero" id="hero">
+        <div class="hero__container container" data-aos="fade-down">
+            <div class="hero__save-the-date">
+                <button class="hero__save-the-date__button" type="button">
+                    <span class="hero__save-the-date__text">SAVE THE DATE</span>
+                </button>
+                <img class="hero__logo" src="./images/halloween-pumpkin-logo.png" alt="Halloween Pumpkin Logo">
+            </div>
+            <div class="hero__body">
+                <h1 class="hero__body__title">SAVE THE DATE</h1>
+                <p class="hero__body__text">
+                The darkest night of the year now has a reason to celebrate.
+                </p>
+                <p class="hero__body__text">
+                The birthday starts in
+                </p>
+                <div class="hero__body__countdown" id="countDown">
+                    <span class="hero__body__countdown__item" id="daysCountDown"></span>
+                    <span class="hero__body__countdown__item" id="hoursCountDown"></span>
+                    <span class="hero__body__countdown__item" id="minutesCountDown"></span>
+                    <span class="hero__body__countdown__item" id="secondsCountDown"></span>
+                </div>
+            </div>
+            <div class="scroll scroll--down">
+                <a href="#attractions">
+                    <img class="scroll__arrow" src="./images/scroll-down-arrow.png" alt="Scroll Down Arrow">
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <img class="separator" src="./images/halloween-separator.png" alt="Halloween Separator">
+    </div>
+    <section class="attractions" id="attractions">
+        <div class="attractions__container container" data-aos="fade-down">
+            <div class="scroll scroll--up">
+                <a href="#hero">
+                    <img class="scroll__arrow" src="./images/scroll-down-arrow.png" alt="Scroll Down Arrow">
+                </a>
+            </div>
+            <h2 class="attractions__title">Attractions</h2>
+            <div class="attractions__cards">
+                <div class="attractions__cards__card">
+                    <h3 class="attractions__cards__card__title">Costume Contest</h3>
+                    <h4 class="attractions__cards__card__subtitle">Release your darkest and most creative self.</h4>
+                    <p class="attractions__cards__card__description">
+                        The black carpet is rolled out for the night's most impressive creatures.
+                        Prepare your best disguise and compete for trophies in the Scariest, Most Creative, and Best Couple or Group
+                        categories.
+                        Voting will be in real time — make sure your look impresses even the shadows.
+                    </p>
+                </div>
+                <div class="attractions__cards__card">
+                    <h3 class="attractions__cards__card__title">Witches' Brew Bar</h3>
+                    <h4 class="attractions__cards__card__subtitle">Hypnotizing elixirs and an alchemy of flavors.</h4>
+                    <p class="attractions__cards__card__description">
+                        A sensory experience where the mixing of ingredients comes to life.
+                        Savor exclusive artisanal elixirs served with dry ice mist, edible glitter, and surprising combinations.
+                        Choose between exclusive alcoholic potions or non-alcoholic virgin spells, and let every sip awaken your
+                        senses.
+                    </p>
+                </div>
+                <div class="attractions__cards__card">
+                    <h3 class="attractions__cards__card__title">Immersive Dance Floor</h3>
+                    <h4 class="attractions__cards__card__subtitle">Enveloping beats until the break of dawn.</h4>
+                    <p class="attractions__cards__card__description">
+                        An environment perfectly designed with scenic lighting, mystical projections, and immersive sound effects.
+                        Lose yourself to the DJs' selection on a floor built to keep the energy at its peak, celebrating until dawn
+                        amidst lights, shadows, and high vibes.
+                    </p>
+                </div>
+            </div>
+            <div class="scroll scroll--down">
+                <a href="#party-map">
+                    <img class="scroll__arrow" src="./images/scroll-down-arrow.png" alt="Scroll Down Arrow">
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <img class="separator" src="./images/halloween-separator.png" alt="Halloween Separator">
+    </div>
+    <section class="party-map" id="party-map">
+        <div class="party-map__container container" data-aos="fade-left" >
+            <div class="scroll scroll--up">
+                <a href="#attractions">
+                    <img class="scroll__arrow" src="./images/scroll-down-arrow.png" alt="Scroll Down Arrow">
+                </a>
+            </div>
+            <h2 class="party-map__title">Party Map & Haunted Grounds</h2>
+            <div class="party-map__body">
+                <div class="party-map__body__description">
+                    <h3 class="party-map__body__description__title">Navigate through the shadows and discover every corner of the night.</h2>
+                    <p class="party-map__body__description__text">
+                        Step into our immersive haunt! 
+                        From the potion-filled Witches' Brew Bar to the heart of the Immersive Dance Floor, explore the floor plan below to locate key zones, photo spots, and stage areas. 
+                        Don't get lost in the dark — hover over each area to unlock details!
+                    </p>
+                </div>
+                <img class="party-map__body__image" src="./images/halloween-party-map.png" alt="Halloween Party Map">
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <img class="separator" src="./images/halloween-separator.png" alt="Halloween Separator">
+    </div>
+    <footer class="footer">
+        <div class="footer__container container">
+            <a href="https://github.com/AnaLuizaGomesDev">
+                <img class="footer__github-icon" src="./images/github.png" alt="Github Icon">
+            </a>
+            <p class="footer__text"> Developed by AnaLuizaGomesDev</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
